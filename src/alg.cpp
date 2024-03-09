@@ -25,15 +25,15 @@ double calcItem(double x, uint16_t n) {
 
 double expn(double x, uint16_t count) {
   double e = 1;
-  for (int i = 1; i <= count; ++i) 
+  for (int i = 1; i <= count; ++i)
       e+=calcItem(x, i);
   return e;
 }
 
 double sinn(double x, uint16_t count) {
   double sin = x;
-  for (int i = 2; i <= count; ++i) 
-    sin += pown(-1,i-1)* calcItem(x, i*2-1);
+  for (int i = 2; i <= count; ++i)
+    sin += pown(-1, i-1)* calcItem(x, i*2-1);
   return sin;
 }
 
